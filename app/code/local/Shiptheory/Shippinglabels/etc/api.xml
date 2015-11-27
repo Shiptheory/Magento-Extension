@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <shiptheory translate="title" module="shippinglabels">
+            <title>Shiptheory</title>
+            <model>shippinglabels/config_api</model>
+            <methods>
+                <list translate="title" module="shippinglabels">
+                    <title>Get Shipping Methods</title>
+					<method>getShippingMethods</method>
+                </list>
+            </methods>
+            </shiptheory>
+        </resources>
+        <acl>
+            <resources>
+                <shiptheory translate="title" module="shippinglabels">
+                    <title>Shiptheory</title>
+                    <list translate="title" module="shippinglabels">
+                        <title>List Shipping Methods</title>
+						<acl>config/list</acl>
+                    </list>
+                </shiptheory>
+            </resources>
+        </acl>		
+    </api>
+</config>

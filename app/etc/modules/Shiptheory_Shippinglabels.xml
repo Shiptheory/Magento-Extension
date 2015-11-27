@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Shiptheory_Shippinglabels>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Shiptheory_Shippinglabels>
+    </modules>
+</config>
