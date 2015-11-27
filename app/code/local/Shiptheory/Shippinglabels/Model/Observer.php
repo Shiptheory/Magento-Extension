@@ -13,7 +13,7 @@ class Shiptheory_Shippinglabels_Model_Observer
 	    }
 
         $block = $observer->getEvent()->getBlock();
-        if(get_class($block) =='Mage_Adminhtml_Block_Widget_Grid_Massaction'
+        if($block instanceof Mage_Adminhtml_Block_Widget_Grid_Massaction_Abstract
             && $block->getRequest()->getControllerName() == 'sales_order')
         {
             $block->addItem('shippinglabels', array(
