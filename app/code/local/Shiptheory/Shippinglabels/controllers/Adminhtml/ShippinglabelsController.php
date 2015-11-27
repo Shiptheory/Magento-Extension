@@ -41,7 +41,7 @@ class Shiptheory_Shippinglabels_Adminhtml_ShippinglabelsController extends Mage_
     		//only retry failed or pending
     		$collection->addFieldToFilter('status', array('in' => array(1,0)));
     		$ids = $collection->getData();
-    		$queued = $collection->count();
+    		$queued = $collection->getSize();
     		$failed_count = 0;$success_count = 0;
     		
     	}
@@ -205,7 +205,7 @@ class Shiptheory_Shippinglabels_Adminhtml_ShippinglabelsController extends Mage_
 			$order = Mage::getModel('sales/order')->load($order_id);
 			if($order->canShip()){
 			
-				$item_qty =  $order->getItemsCollection()->count();
+				$item_qty =  $order->getItemsCollection()->getSize();
 				$shipment = Mage::getModel('sales/service_order', $order)->prepareShipment($item_qty);
 				$shipment = new Mage_Sales_Model_Order_Shipment_Api();
 				
