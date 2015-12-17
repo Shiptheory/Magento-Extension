@@ -11,22 +11,26 @@ Shiptheory is a shipping automation platform allowing you easy integrations betw
 - UPS
 - Fedex
 - UKMail (iConsign)
-- Parcelforce (Exresslink)
+- Parcelforce (exressLink)
 - Yodel
-- Royal Mail Net Dispatch
+- APC Overnight
+- 13ten Parcels
+- XDP
+- FedEx
+- Royal Mail NetDespatch
 
 ### Supported channels
 - Magento
 - Brightpearl
-- Exactonline
+- Exact
 
 ## Installation
 Magento Connect is the recommend route to install Shiptheory on your store, it makes updates easier. 
 
 For those that do not wish to use Magento Connect, you can install the extension manually using FTP/SFTP. The following instructions briefly explain how to install manually. If anything in the below instructions does not make sense, please contact your developer or use Magento Connect to install.
 
-- Download the Shiptheory Magento extension here
-- Extract the download zip file
+- Download the Shiptheory Magento extension [here](https://github.com/Shiptheory/Magento-Extension/archive/master.zip)
+- Extract the downloaded zip file and open the Magento-Extension-master folder
 - Upload the the app and skin directories to your Magento root directory
 - Clear your Magento cache
 - Log out and back into the Magento admin panel
