@@ -18,7 +18,7 @@ class Shiptheory_Shippinglabels_Model_Observer
         {
             $block->addItem('shippinglabels', array(
                 'label' => 'Ship Orders',
-                'url' => Mage::app()->getStore()->getUrl('shippinglabels/adminhtml_shippinglabels/ship')
+                'url' => Mage::app()->getStore()->getUrl('adminhtml/shippinglabels_shippinglabels/ship')
             ));
         }
     }

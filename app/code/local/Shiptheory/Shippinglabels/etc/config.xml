@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<Shiptheory_Shippinglabels>
-			<version>0.0.7</version>
+			<version>0.0.8</version>
 		</Shiptheory_Shippinglabels>
 	</modules>
 	<global>
@@ -74,13 +74,13 @@
 	</global>
 	<admin>
 		<routers>
-			<shippinglabels>
-				<use>admin</use>
+			<adminhtml>
 				<args>
-					<module>Shiptheory_Shippinglabels</module>
-					<frontName>shippinglabels</frontName>
+					<modules>
+						<shippinglabels after="Mage_Adminhtml">Shiptheory_Shippinglabels_Adminhtml</shippinglabels>
+					</modules>
 				</args>
-			</shippinglabels>
+			</adminhtml>
 		</routers>
 	</admin>
 	<adminhtml>
@@ -107,7 +107,7 @@
 					<shippinglabels translate="title" module="shippinglabels">
 						<title>Shiptheory Messages</title>
 						<sort_order>15</sort_order>
-						<action>shippinglabels/adminhtml_shippinglabels</action>
+						<action>adminhtml/shippinglabels_shippinglabels</action>
 					</shippinglabels>
 				</children>
 			</sales>

@@ -3,7 +3,7 @@
  * @category   Shiptheory
  * @package    Shiptheory_Shippinglabels
  */
-class Shiptheory_Shippinglabels_Adminhtml_ShippinglabelsController extends Mage_Adminhtml_Controller_Action
+class Shiptheory_Shippinglabels_Adminhtml_Shippinglabels_ShippinglabelsController extends Mage_Adminhtml_Controller_Action
 {
 	
 	/**
