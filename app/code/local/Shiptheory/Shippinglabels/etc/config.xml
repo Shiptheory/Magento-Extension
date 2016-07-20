@@ -42,14 +42,14 @@
 					</shippinglabels_config_observer>
 				</observers>
 			</admin_system_config_changed_section_shippinglabels>
-			<sales_order_shipment_save_after>
+			<sales_order_shipment_save_commit_after>
 				<observers>
 					<shippinglabels_sales_shipment_observer>
 						<class>shippinglabels/order_observer</class>
 						<method>shipment</method>
 					</shippinglabels_sales_shipment_observer>
 				</observers>
-			</sales_order_shipment_save_after>
+			</sales_order_shipment_save_commit_after>
 		</events>
 		<resources>
 			<shippinglabels_setup>
