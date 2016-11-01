@@ -6,25 +6,11 @@
  */
 class Shiptheory_Shippinglabels_Model_Order_Observer {
 
-    protected $_orderId = null;
+    protected $_Id = null;
     protected $_failMsg = 'Failed to send to Shiptheory';
     protected $_successMsg = 'Sent to Shiptheory successfully';
     protected $_failStatus = 'failed';
     protected $_successStatus = 'success';
-
-    /**
-     * Listens to order save event
-     *
-     * @param object $observer
-     * */
-    public function order($observer) {
-        $order = $observer->getEvent()->getOrder();
-        $data = array(
-            'order_id' => $order->getId()
-        );
-
-        return $this->queue($order, $data);
-    }
 
     /**
      * Listens to shipment save event
@@ -60,21 +46,29 @@ class Shiptheory_Shippinglabels_Model_Order_Observer {
         }
 
         $order_id = $order->getId();
-        $this->_orderId = Mage::getModel('shippinglabels/history')->loadArchive($order_id);
+        
+        if(empty($data['shipment_id'])){
+            Mage::helper('shippinglabels')->log("Failed to find Shipment ID for Order " .$order_id);
+            return;
+        }
+        
+        $shipment_id = $data['shipment_id'];
+        
+        $this->_Id = Mage::getModel('shippinglabels/history')->loadArchive($shipment_id);
 
         //save the new order to the local Shiptheory queue
         $pending_order = Mage::getModel('shippinglabels/history');
-        if ($this->_orderId) {
-            $pending_order->setId($this->_orderId);
+        if ($this->_Id) {
+            $pending_order->setId($this->_Id);
             return; //overwrites the above line, will be used for retry in a future version
         }
 
         try {
 
             $pending_order
-                    ->setInternalId($order_id)
-                    ->setReference($order->getIncrementId())
-                    ->save();
+                ->setReference($order->getIncrementId())
+                ->setShipmentId($shipment_id)
+                ->save();
         } catch (Exception $e) {
             Mage::helper('shippinglabels')->log($e);
         }

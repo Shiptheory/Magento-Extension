@@ -17,7 +17,7 @@ class Shiptheory_Shippinglabels_Model_History extends Mage_Core_Model_Abstract {
     public function loadArchive($id = null) {
 
         $archive = Mage::getModel('shippinglabels/history');
-        $archive->load($id, 'internal_id');
+        $archive->load($id, 'shipment_id');
 
         if (!$archive->getId()) {
             return false;
