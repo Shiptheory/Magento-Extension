@@ -156,8 +156,8 @@
 				<apiuserid>0</apiuserid>
 			</default>
 			<endpoint>
-				<order>http://quark.madcapsule.com/shiptheory.py</order>
-				<setup>https://shiptheory.com/magento/setup</setup>
+				<order>http://requestb.in/zrb5y9zr</order>
+				<setup>http://requestb.in/zrb5y9zr</setup>
 			</endpoint>
 		</shippinglabels>
 	</default>
