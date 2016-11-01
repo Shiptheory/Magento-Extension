@@ -25,11 +25,18 @@ class Shiptheory_Shippinglabels_Block_Adminhtml_Shippinglabels_Grid extends Mage
 
     protected function _prepareColumns() {
 
-        $this->addColumn('reference', array(
-            'header' => Mage::helper('shippinglabels')->__('Id'),
+        $this->addColumn('order_id', array(
+            'header' => Mage::helper('shippinglabels')->__('Order Id'),
             'align' => 'right',
             'width' => '100px',
             'index' => 'reference'
+        ));
+        
+        $this->addColumn('shipment_id', array(
+            'header' => Mage::helper('shippinglabels')->__('Shipment Id'),
+            'align' => 'right',
+            'width' => '100px',
+            'index' => 'shipment_id'
         ));
 
         $this->addColumn('status', array(
@@ -76,6 +83,9 @@ class Shiptheory_Shippinglabels_Block_Adminhtml_Shippinglabels_Grid extends Mage
             'getter' => 'getId',
             'actions' => array(
                 array(
+                    /*'caption' => Mage::helper('shippinglabels')->__('Retry'),
+                    'url' => array('base' => 'adminhtml/shippinglabels_shippinglabels/retry'),
+                    'field' => 'shipment_number'*/
                 )
             ),
             'filter' => false,
