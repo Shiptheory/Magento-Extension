@@ -1,0 +1,8 @@
+app/code/local/Shiptheory/Shippinglabels
+
+app/design/adminhtml/base/default/layout/shiptheory.xml
+app/design/adminhtml/base/default/template/shiptheory
+
+app/etc/modules/Shiptheory_Shippinglabels.xml
+
+skin/adminhtml/default/default/shiptheory
