@@ -5,7 +5,7 @@ Shiptheory's Magento extension.
 Shiptheory is a shipping automation platform allowing you easy integrations between carriers and channels.
 
 ### Supported carriers
-- Royal Mail
+- Royal Mail OBA
 - DPD
 - Interlink
 - UPS
@@ -18,16 +18,42 @@ Shiptheory is a shipping automation platform allowing you easy integrations betw
 - XDP
 - FedEx
 - Royal Mail NetDespatch
+- DX
+- P2P Mailing
+- Amazon Multi-Channel Fulfilment
+- Pall-Ex
+- Yamato Europe
+- DHL DE
+- PostNord
+- SkyNet
+- MyHermes
+- Deutsche Post
+- TNT
+- Despatch Bay
+- Palletways
+- DHL
+- Fedex
+- CSM Logistics
+- DPD Polska
 
 ### Supported channels
 - Magento
 - Brightpearl
 - Exact
+- Shopify
+- VisualSoft
+- Zoey
+- Unleashed
+- Sellerdynamics
+- Magento 2
+- Channel Grabber
+- Ebay
+- WooCommerce
+- TradeGecko
+- Shiptheory Rest API
 
 ## Installation
-Magento Connect is the recommend route to install Shiptheory on your store, it makes updates easier. 
-
-For those that do not wish to use Magento Connect, you can install the extension manually using FTP/SFTP. The following instructions briefly explain how to install manually. If anything in the below instructions does not make sense, please contact your developer or use Magento Connect to install.
+You can install the extension manually using FTP/SFTP. The following instructions briefly explain how to install manually. If anything in the below instructions does not make sense, please contact your developer or use Magento Connect to install.
 
 - Download the Shiptheory Magento extension [here](https://github.com/Shiptheory/Magento-Extension/archive/master.zip)
 - Extract the downloaded zip file and open the Magento-Extension-master folder
@@ -42,9 +68,6 @@ If you see a 404 or access denied message when trying to view the Shiptheory set
 
 
 ## Useful links
-#### Shiptheory's Magento connect extensions
-https://www.magentocommerce.com/magento-connect/developer/Shiptheory
-
 ####  Shiptheory's Youtube channel with tutorial and guides
 https://www.youtube.com/channel/UCUkr-_pJkQF4pST8Xh9kK1A
 
