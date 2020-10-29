@@ -157,7 +157,7 @@
 			</default>
 			<endpoint>
                 <order>http://quark.madcapsule.com/shiptheory.py</order>
-                <setup>https://shiptheory.com/magento/setup</setup>
+                <setup>https://helm.shiptheory.com/magento/setup</setup>
 			</endpoint>
 		</shippinglabels>
 	</default>

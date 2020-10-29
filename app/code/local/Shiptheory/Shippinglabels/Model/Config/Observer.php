@@ -91,7 +91,7 @@ class Shiptheory_Shippinglabels_Model_Config_Observer {
             Mage::helper('shippinglabels')->status('pending');
 
             Mage::getSingleton('core/session')->getMessages(true);
-            Mage::getSingleton('core/session')->addSuccess("Success, everything is now connected. Check out your Shiptheory account to <a href=\"https://shiptheory.com/magento/edit\" target=\"_blank\">setup some shipping rules</a>.");
+            Mage::getSingleton('core/session')->addSuccess("Success, everything is now connected. Check out your Shiptheory account to <a href=\"https://helm.shiptheory.com/magento/edit\" target=\"_blank\">setup some shipping rules</a>.");
         }
     }
 

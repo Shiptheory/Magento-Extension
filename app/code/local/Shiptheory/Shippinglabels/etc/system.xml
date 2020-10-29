@@ -59,7 +59,7 @@
 								<show_in_website>1</show_in_website>
 								<show_in_store>1</show_in_store>
 								<depends><enabled>1</enabled></depends>
-								<comment><![CDATA[You can get this from your Shiptheory account <a href="https://shiptheory.com/magento/edit" target="_blank">here</a>]]></comment>								
+								<comment><![CDATA[You can get this from your Shiptheory account <a href="https://helm.shiptheory.com/magento/edit" target="_blank">here</a>]]></comment>								
 							</apikey>							
 							<!--<trigger translate="label">
 								<label>When should labels be created?</label>
